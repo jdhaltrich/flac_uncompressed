@@ -1,0 +1,9 @@
+#logdir <- paste(targetdir, "/logs", sep = "", collapse = NULL)
+
+#if(!dir.exists(path = logdir)) {
+#	dir.create(path = logdir, showWarnings = TRUE, recursive = TRUE,
+#		mode = "0755"
+#	)
+#}
+
+#structdir02_b <- structdir02[2:length(structdir02)]

@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+argsarray=("$@")
+batchrun="${argsarray[0]}"
+rootdir="${argsarray[1]}"
+basedir="${argsarray[2]}"
+targetdir="${argsarray[3]}"
+maxindex=${argsarray[4]}
+spectrogramopt="${argsarray[5]}"
+rcodepath="${argsarray[6]}"
+
+touch "${batchrun}"
+
+for (( i = 1; i <= ${maxindex}; i++ )); do
+    printf '%s %s %s %s %s %s %s\n' "R --no-save CMD BATCH '--args" "'"${rootdir}"'" "'"${basedir}"'" "'"${targetdir}"'" "${i}" ""${spectrogramopt}"'" "${rcodepath}" >> "${batchrun}"
+done

@@ -1,0 +1,51 @@
+#!/usr/bin/env bash
+
+args=("$@")
+filepath="${args[0]}"
+
+#metaflac						\
+#	--show-md5sum					\
+#	--show-min-blocksize				\
+#	--show-max-blocksize				\
+#	--show-min-framesize				\
+#	--show-max-framesize				\
+#	--show-sample-rate				\
+#	--show-channels					\
+#	--show-bps					\
+#	--show-total-samples				\
+#metaflac --show-vendor-tag --list "${filepath}"				\
+#metaflac --show-all-tags --list "${filepath}"
+	
+#metaflac --list "${filepath}"
+	
+	#--show-tag=name					\
+	
+	#--remove-tag=name				\
+	#--remove-first-tag=name				\
+	#--remove-all-tags				\
+	#--remove-all-tags-except=NAME1[=NAME2[=...]]	\
+	#--set-tag=field					\
+	#--set-tag-from-file=field			\
+	#--import-tags-from=file				\
+metaflac --export-tags-to="/users/juancho_gentoo/test/flac/c/new/01.-Dancing With The Moonlit Knight" "${filepath}"
+	#--import-cuesheet-from=file			\
+	#	--export-cuesheet-to=file			\
+	#--import-picture-from={FILENAME|SPECIFICATION}	\
+	#	--export-picture-to=file			\
+	#--add-replay-gain				\
+	#	--scan-replay-gain				\
+	#--remove-replay-gain				\
+	#--add-seekpoint={#|X|#x|#s}			\
+	#--add-padding=length				\
+	
+	
+	#--remove					\
+	#--block-number=#[,#[...]]			\
+	#--block-type=type[,type[...]]			\
+	#--except-block-type=type[,type[...]]		\
+	#--application-data-format=hexdump|text		\
+	#--data-format=binary|binary-headerless|text	\
+	#--append					\
+	#--remove-all					\
+	#--merge-padding					\
+	#--sort-padding					\
