@@ -1,1 +1,0 @@
-R --no-save CMD BATCH '--args '/laynestaley88/jdhaltrich/audio/lab/wav/work' '/fiedel' '/fiedel_flac_R' 1 1' /laynestaley88/jdhaltrich/linuxstp/dev/script/flac/v1_2/src/R/v1_2_r2/flac_uncmp2_02.R
